@@ -34,6 +34,6 @@ fn main() {
     );
     polygon1.draw(&mut framebuffer, background_color);
 
-    let output_file = "output.bmp";
+    let output_file = "output_polygon1.bmp";
     framebuffer.render_to_file(output_file);
 }
