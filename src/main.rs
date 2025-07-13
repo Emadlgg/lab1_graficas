@@ -15,8 +15,19 @@ fn main() {
     framebuffer.set_background_color(background_color);
     framebuffer.clear();
 
+    // --- POLÍGONO 2  ---
+    let polygon2 = Polygon::new(
+        vec![
+            Vector2::new(321.0, 335.0),
+            Vector2::new(288.0, 286.0),
+            Vector2::new(339.0, 251.0),
+            Vector2::new(374.0, 302.0),
+        ],
+        Color::BLUE,
+        Color::WHITE,
+    );
+    polygon2.draw(&mut framebuffer, background_color);
 
-
-    let output_file = "output.bmp";
+    let output_file = "outputp_polygon2.bmp";
     framebuffer.render_to_file(output_file);
 }
